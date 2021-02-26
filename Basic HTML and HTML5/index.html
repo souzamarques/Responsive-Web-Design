@@ -8,24 +8,25 @@
             <p>Click here to view more <a href="#">cat photos</a>.</p>
 
             <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
-
-            <p>Things cats love:</p>
-            <ul> <!-- Lista não ordenada -->
-                <li>cat nip</li>
-                <li>laser pointers</li>
-                <li>lasagna</li>
-            </ul>
-            <p>Top 3 things cats hate:</p>
-            <ol> <!-- Lista ordenada -->
-                <li>flea treatment</li>
-                <li>thunder</li>
-                <li>other cats</li>
-            </ol>
+            <div> <!-- Usado como container de uso geral para outros elementos. Pode ser utilizado para agrupar elementos  -->
+                <p>Things cats love:</p>
+                <ul> <!-- Lista não ordenada -->
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <p>Top 3 things cats hate:</p>
+                <ol> <!-- Lista ordenada -->
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
             <form action="https://freecatphotoapp.com/submit-cat-photo"> <!-- Formulário web para envio de dados a um servidor -->
-                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label> <!-- Conjunto de botões (Radio Button) -->
+                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label> <!-- Conjunto de botões (Radio Button) -->
                 <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
                 
-                <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving"> Loving</label> <!-- Conjunto de Checkboxes -->
+                <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label> <!-- Conjunto de Checkboxes -->
                 <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
                 <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
                 
