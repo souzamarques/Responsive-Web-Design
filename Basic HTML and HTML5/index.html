@@ -22,12 +22,12 @@
                 <li>other cats</li>
             </ol>
             <form action="https://freecatphotoapp.com/submit-cat-photo"> <!-- Formulário web para envio de dados a um servidor -->
-                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label> <!-- Conjunto de botões (Radio Button) -->
-                <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label> <!-- Conjunto de botões (Radio Button) -->
+                <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
                 
-                <label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label> <!-- Conjunto de Checkboxes -->
-                <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label>
-                <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label><br>
+                <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving"> Loving</label> <!-- Conjunto de Checkboxes -->
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+                <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
                 
                 <input type="text" placeholder="cat photo URL" required> <!-- Elemento de entrada para obter informações do usuário (Tipo: texto) -->
                 <button type="submit">Submit</button> <!-- Botão para envio de dados do formulário para a URL especificada com o atributo action -->
