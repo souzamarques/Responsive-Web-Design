@@ -3,11 +3,20 @@
     <head>
     </head>
     <body>
+        <!-- Importando a fonte Lobster do Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <!-- tag style para trabalhar com informações de estilo & definindo um tamanho e fonte das tag p-->
         <style>
-            .red-text {
+            /* criação da classe .red-text */
+            .red-text { 
                 color: red;
             }
 
+            /* adicionando a fonte Lobster na tag h2 */
+            h2 {
+                font-family: Lobster;
+            }
+    
             p {
                 font-size: 16px;
                 font-family: monospace;
@@ -18,30 +27,38 @@
             <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
 
             <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
-            <div> <!-- Usado como container de uso geral para outros elementos. Pode ser utilizado para agrupar elementos  -->
+            <!-- Usado como container de uso geral para outros elementos. Pode ser utilizado para agrupar elementos  -->
+            <div>
                 <p>Things cats love:</p>
-                <ul> <!-- Lista não ordenada -->
+                <!-- Lista não ordenada -->
+                <ul> 
                     <li>cat nip</li>
                     <li>laser pointers</li>
                     <li>lasagna</li>
                 </ul>
                 <p>Top 3 things cats hate:</p>
-                <ol> <!-- Lista ordenada -->
+                <!-- Lista ordenada -->
+                <ol> 
                     <li>flea treatment</li>
                     <li>thunder</li>
                     <li>other cats</li>
                 </ol>
             </div>
-            <form action="https://freecatphotoapp.com/submit-cat-photo"> <!-- Formulário web para envio de dados a um servidor -->
-                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label> <!-- Conjunto de botões (Radio Button) -->
+            <!-- Formulário web para envio de dados a um servidor -->
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!-- Conjunto de botões (Radio Button) -->
+                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
                 <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
                 
-                <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label> <!-- Conjunto de Checkboxes -->
+                <!-- Conjunto de Checkboxes -->
+                <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
                 <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
                 <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
                 
-                <input type="text" placeholder="cat photo URL" required> <!-- Elemento de entrada para obter informações do usuário (Tipo: texto) -->
-                <button type="submit">Submit</button> <!-- Botão para envio de dados do formulário para a URL especificada com o atributo action -->
+                <!-- Elemento de entrada para obter informações do usuário (Tipo: texto) -->
+                <input type="text" placeholder="cat photo URL" required>
+                <!-- Botão para envio de dados do formulário para a URL especificada com o atributo action --> 
+                <button type="submit">Submit</button> 
             </form>
         </main>
     </body>
